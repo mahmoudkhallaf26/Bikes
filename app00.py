@@ -21,7 +21,7 @@ with tab1:
 with tab2:
     fig3=px.histogram(data_frame=df,x="weather",y="rented_bikes_count",facet_col=df["date"].dt.year,histfunc="count",title="Relationship between weather and Rented Bikes")
     st.plotly_chart(fig3)
-    fig4 = px.scatter(data_frame=df,x="temp",y="rented_bikes_count",title="Relationship between Temperature and Rented Bikes",trendline="ols")
+    fig4 = px.scatter(data_frame=df,x="temp",y="rented_bikes_count",title="Relationship between Temperature and Rented Bikes")
     st.plotly_chart(fig4)
     fig5 =px.scatter(data_frame=df,x="windspeed",y="rented_bikes_count",color="weather",title="Windspeed effect on rental")
     st.plotly_chart(fig5)
